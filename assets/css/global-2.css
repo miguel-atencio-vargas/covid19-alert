@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Regular.woff2") format('woff2'), url("../fonts/Ubuntu-Regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Medium.woff2") format('woff2'), url("../fonts/Ubuntu-Medium.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-MediumItalic.woff2") format('woff2'), url("../fonts/Ubuntu-MediumItalic.woff") format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Bold.woff2") format('woff2'), url("../fonts/Ubuntu-Bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RussoOne';
+  src: url("../fonts/RussoOne-Regular.woff2") format('woff2'), url("../fonts/RussoOne-Regular.woff") format('woff');
+  font-weight: 500;
+  font-style: bold;
+}
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  vertical-align: baseline;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #d9cbba;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #121b24;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+h1,
+.h1 {
+  font-size: 3.2rem;
+}
+h2,
+.h2 {
+  font-size: 2.5rem;
+}
+h3,
+.h3 {
+  font-size: 1.9rem;
+}
+h4,
+.h4 {
+  font-size: 1.6rem;
+}
+h5,
+.h5 {
+  font-size: 1.4rem;
+}
+h6,
+.h6 {
+  font-size: 1.2rem;
+}
+p {
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+b,
+strong {
+  color: #ae906c;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: #d9653b;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: #5cf29d;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button,
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+textarea {
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
