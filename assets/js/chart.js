@@ -73,8 +73,8 @@ async function chartIt(){
 
 async function getData(){
 	let fecha = []; let ctnCases = []; let ctnDeaths = [];
-	//const response = await fetch('https://pomber.github.io/covid19/timeseries.json');
-	const response = await fetch('./assets/images/timeseries.json');
+	const response = await fetch('https://pomber.github.io/covid19/timeseries.json');
+	//const response = await fetch('./assets/images/timeseries.json');
 	//----- End api covid de pomber
 	const data = await response.json();
 	data['Bolivia'].slice(48).forEach(({date, confirmed, recovered, deaths}) => {
