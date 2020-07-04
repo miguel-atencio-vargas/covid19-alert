@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="./assets/css/global-2.css" data-turbolinks-track="reload">
     <link rel="stylesheet" href="./assets/css/global.css" data-turbolinks-track="reload">
     <link rel="stylesheet" href="./assets/css/icomoon.css" data-turbolinks-track="reload">
-    <script src="/assets/js/turbolinks.js"></script>
+    <script src="./assets/js/turbolinks.js"></script>
+    <!-- Vendors-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" defer></script>
+    <script src="./assets/js/chart.js" defer></script>
+    <!-- Scripts globales-->
+    <script src="./assets/js/global.js" defer></script>
   </head>
   <body class="c-block-body">
     <div class="c-fixed">
@@ -35,25 +40,40 @@
     </div>
     <div class="c-block-hero">
       <div class="g-container flex-continer">
-        <h3 class="h1">INGENIERIA DE LA INFORMACIÓN</h3>
+        <h3 class="h1">INGENIERÍA DE LA INFORMACIÓN</h3>
         <h1>Monitorizacion y seguimiento de casos Covid-2019 Bolivia</h1>
-        <p>Proident amet doctrina, est de elit sunt quorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+        <p>Proyecto de ciclo para la materia Ingeniería de la información del docente: Ing.: Ramiro Jhonatan Pardo de la Universidad Loyola de Bolivia. Realizado por el estudiante de septimo semestre: Miguel Benjamin Atencio Vargas.</p>
+        <div class="h2">Recursos utilizados:</div>
+        <div class="c-block-hero__list">
+          <h3>Maquetación y Estilos:</h3>
+          <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox </a></p>
+          <p><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS Grid</a></p>
+          <h3>Peticion y gráfica de datos:</h3>
+          <p>Fetch API</p>
+          <p><a href="https://www.chartjs.org/" target="_blank">ChartJs</a></p>
+          <h3>Base de datos y API's:</h3>
+          <p>MongoDB</p>
+          <p><a href="https://github.com/pomber/covid19" target="_blank">Pomber Covid-API</a></p>
+          <h3>Servidor y otros:</h3>
+          <p>Express con NodeJs</p>
+          <p>GitHub Pages</p>
+        </div>
       </div>
     </div>
-    <svg class="hero__div" width="100%" height="47px" viewbox="0 0 1440 47" version="1.1" preserveaspectratio="none" data-reactid="21">
+    <svg class="hero__div" viewbox="0 0 1440 47" version="1.1" preserveaspectratio="none" data-reactid="21">
       <defs data-reactid="22"></defs>
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" data-reactid="23">
-        <path id="Path-9" d="M0,0.0577405639 C117.504588,18.44359 269.602477,22.1720696 456.293666,11.2431795 C562.076057,5.05068514 730.784198,0.911127653 885.297232,3.27366179 C1157.17617,7.43074321 1386.98062,21.3276838 1440,38.3891927 L1440,46.9388979 L0,46.9388979 L0,0.0577405639 Z" fill="#121b24" data-reactid="24"></path>
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" data-reactid="23">
+        <path d="M0,0.0577405639 C117.504588,18.44359 269.602477,22.1720696 456.293666,11.2431795 C562.076057,5.05068514 730.784198,0.911127653 885.297232,3.27366179 C1157.17617,7.43074321 1386.98062,21.3276838 1440,38.3891927 L1440,46.9388979 L0,46.9388979 L0,0.0577405639 Z" fill="#121b24" data-reactid="24"></path>
       </g>
     </svg>
     <div class="g-container">
       <div class="c-block-grid">
-        <div class="c-chart">CHART</div>
-        <div class="c-description">DESCRIPCION DEL PROYECTO</div>
+        <div class="c-chart__canvas">Contagios de Covid-2019 en Bolivia <img src="./assets/images/bolivia.png">
+          <canvas id="cases"></canvas>Fallecidos de Covid-2019 en Bolivia <img src="./assets/images/death.png">
+          <canvas id="deaths"></canvas>
+        </div>
         <div class="c-tweets">LISTADO DE TWEETS</div>
       </div>
     </div>
-    <!-- Vendors-->
-    <!-- Scripts globales-->
   </body>
 </html>
