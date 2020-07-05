@@ -1,6 +1,6 @@
-
-
-chartIt();
+document.addEventListener("turbolinks:load", function() {
+  chartIt();
+})
 async function chartIt(){
 	const covid_data = await getData();
 	const ctx = document.getElementById('cases').getContext('2d');
@@ -8,7 +8,7 @@ async function chartIt(){
 	const data = {
 		labels: covid_data.fecha,
 		datasets: [{
-			label: `Desde: ${covid_data.fecha[0]} `,
+			label:'Total de contagios',
 			data: covid_data.ctnCases,
 			backgroundColor: 'rgba(217,101,59, 0.2)',
 			borderColor: '#D9653B',
@@ -18,7 +18,7 @@ async function chartIt(){
 	const data_deaths = {
 		labels: covid_data.fecha,
 		datasets: [{
-			label: `Desde: ${covid_data.fecha[0]} `,
+			label: 'Total de fallecidos',
 			data: covid_data.ctnDeaths,
 			backgroundColor: 'rgba(245,28,28,.2)',
 			borderColor: '#CF3939',
@@ -73,8 +73,8 @@ async function chartIt(){
 
 async function getData(){
 	let fecha = []; let ctnCases = []; let ctnDeaths = [];
-	const response = await fetch('https://pomber.github.io/covid19/timeseries.json');
-	//const response = await fetch('./assets/images/timeseries.json');
+	//const response = await fetch('https://pomber.github.io/covid19/timeseries.json');
+	const response = await fetch('./assets/images/timeseries.json');
 	//----- End api covid de pomber
 	const data = await response.json();
 	data['Bolivia'].slice(48).forEach(({date, confirmed, recovered, deaths}) => {

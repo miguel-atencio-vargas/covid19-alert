@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no, email=no, address=no, date=no">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/ico">
     <title>Covid | Alert!</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Estilos globales-->
     <link rel="stylesheet" href="./assets/css/global-2.css" data-turbolinks-track="reload">
     <link rel="stylesheet" href="./assets/css/global.css" data-turbolinks-track="reload">
+    <!-- Icomoon-->
     <link rel="stylesheet" href="./assets/css/icomoon.css" data-turbolinks-track="reload">
+    <!-- Turbolinks-->
     <script src="./assets/js/turbolinks.js"></script>
     <!-- Vendors-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" defer></script>
@@ -20,19 +24,21 @@
     <div class="c-fixed">
       <div class="g-container">
         <div class="c-header">
-          <div class="c-header__logo"><a class="h1" href="index.html"><i class="icon-chart"></i> Alerta Covid</a></div>
+          <div class="c-header__logo"><a class="h1" href="index.html"><img src="./assets/images/virus.png"> Alerta Covid</a></div>
           <ul class="c-header__menu">
+            <li><a class="h4" href="index.html">Início<i class="icon-home2"></i></a></li>
             <li><a class="h4" href="panel.html">Panel<i class="icon-equalizer"></i></a></li>
-            <li><a class="h4" href="#.">Descripción<i class="icon-question3"></i></a></li>
-            <li><a class="h4" href="#.">Twitter <i class="icon-twitter"></i></a></li>
+            <li><a class="h4" href="#chart">Gráficos<i class="icon-chart"></i></a></li>
+            <li><a class="h4" href="#tweet">Twitter <i class="icon-twitter"></i></a></li>
           </ul>
           <div class="c-header__burguer">
             <label class="icon-menu3" for="burger"></label>
             <input type="checkbox" id="burger">
             <ul class="c-header__submenu">
+              <li><a class="h4" href="index.html">Início<i class="icon-home2"></i></a></li>
               <li><a class="h4" href="panel.html">Panel<i class="icon-equalizer"></i></a></li>
-              <li><a class="h4" href="#.">Descripción<i class="icon-question3"></i></a></li>
-              <li><a class="h4" href="#.">Twitter <i class="icon-twitter"></i></a></li>
+              <li><a class="h4" href="#chart">Gráficos<i class="icon-chart"></i></a></li>
+              <li><a class="h4" href="#tweet">Twitter <i class="icon-twitter"></i></a></li>
             </ul>
           </div>
         </div>
@@ -41,8 +47,8 @@
     <div class="c-block-hero">
       <div class="g-container flex-continer">
         <h3 class="h1">INGENIERÍA DE LA INFORMACIÓN</h3>
-        <h1>Monitorizacion y seguimiento de casos Covid-2019 Bolivia</h1>
-        <p>Proyecto de ciclo para la materia Ingeniería de la información del docente: Ing.: Ramiro Jhonatan Pardo de la Universidad Loyola de Bolivia. Realizado por el estudiante de septimo semestre: Miguel Benjamin Atencio Vargas.</p>
+        <h1>Monitorización y seguimiento de casos Covid-2019 Bolivia</h1>
+        <p>Proyecto de la materia Ingeniería de la información a cargo del docente: <b>Ing.: Ramiro Jhonatan Pardo</b> de la <a href="http://www.loyola.edu.bo/portal/index.php" target="_blank">Universidad Loyola de Bolivia.</a> Realizado por el estudiante de Septimo Semestre: <a href="https://t.co/utxYqptFGk?amp=1">Miguel Benjamin Atencio Vargas. <i class="icon-github"></i></a> </p>
         <div class="h2">Recursos utilizados:</div>
         <div class="c-block-hero__list">
           <h3>Maquetación y Estilos:</h3>
@@ -68,11 +74,11 @@
     </svg>
     <div class="g-container">
       <div class="c-block-grid">
-        <div class="c-chart__canvas">Contagios de Covid-2019 en Bolivia <img src="./assets/images/bolivia.png">
+        <div class="c-chart__canvas" id="chart">Contagios de Covid-2019 en Bolivia <img src="./assets/images/bolivia.png">
           <canvas id="cases"></canvas>Fallecidos de Covid-2019 en Bolivia <img src="./assets/images/death.png">
           <canvas id="deaths"></canvas>
         </div>
-        <div class="c-tweets">LISTADO DE TWEETS</div>
+        <div class="c-tweets" id="tweet"><i>tweet</i><a class="twitter-timeline" data-height="800" data-theme="dark" href="https://twitter.com/atencio947?ref_src=twsrc%5Etfw">Tweets by atencio947</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
       </div>
     </div>
   </body>

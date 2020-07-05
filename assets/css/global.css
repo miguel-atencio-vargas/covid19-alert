@@ -168,21 +168,23 @@ input[type="checkbox"]:checked + ul {
 }
 @media only screen and (min-width: 769px) {
   .c-block-grid {
-    margin-top: 6rem;
+    margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-row: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     grid-gap: 1rem;
   }
 }
+#tweet i {
+  opacity: 0;
+}
 .c-chart__canvas {
-  grid-column: span 3;
+  grid-column: span 2;
 }
 .c-chart__canvas img {
   position: relative;
   top: 1rem;
 }
-.c-tweets {
-  border: 3px solid #2effec;
+.no_display {
+  display: none;
 }
 /*# sourceMappingURL=global.css.map */
