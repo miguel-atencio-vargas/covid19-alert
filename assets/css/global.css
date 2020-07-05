@@ -25,6 +25,9 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.c-header a {
+  white-space: nowrap;
+}
 .c-header__logo {
   padding-top: 5px;
 }
@@ -49,7 +52,7 @@ ul.c-header__menu li:hover {
 }
 ul.c-header__menu li a {
   font-size: 2rem;
-  padding: 1rem 1rem;
+  padding: 1rem 0.3rem;
 }
 ul.c-header__menu li a i {
   font-size: 2rem;
